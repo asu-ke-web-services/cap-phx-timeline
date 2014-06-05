@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Documentation For Adding Events</title>
+</head>
+
+<body>
+<h1>TImeline File Structure</h1>
+<pre>
+index.html - contains the HTML content for SPLASH page
+about.html - contains the HTML content that shows up after clicking on "about" tab in the timeline
+help.html - contains the HTML content that shows up after clicking on "help" tab in the timeline
+categories/ - contains the HTML files for categories displayed in the timeline - EDIT FILES TO ADD EVENT BOXES
+events/ - contains categorized event details HTML files - ADD FILES TO CATEGORY FOLDERS FOR EVENT HTML FILES (DETAILED VIEW OF EVENT)
+
+
+These are to be edited only if adding categories:
+timeline.html
+css/ - contains all CSS style sheets for the entire project
+
+These folders and files are not to be edited: 
+images/- contains timeline specific images for styling the timeline
+scripts/ - contains javascripts
+fancybox/ - contains javascript that enables to position content over timeline
+
+These are Reference material - no need to upload to server:
+docs/ - has documentation for working with timeline
+image-sources/ - has photoshop files for images used - Scale, Slider
+</pre>
+
+<h1>Creating Event Boxes in Timeline Categories</h1>
+<p>This is the piece of code to add into your category timeline file (located in "categories/")</p>
+<p>Our eventID convention: e%YEAR%-%SEQUENTIAL% (for example: the first event in year 1860 would be <b>e1860-001</b></p>
+<xmp>
+    <div id="%%eventID%%" class="eventOuter ep%%YEAR%%a">
+        <div class="eventInner pLeft">
+            <div class="content linked" onclick="javascript:parent.$.fancybox.open({ href: 'events/%%category%%/%%eventID%%.html',type: 'iframe'}); ">
+                <h1>%%YEAR%%-%%LASTYEARINRANGE%%</h1>
+                <h2>IN ALL CAPS ARE HEADERS</h2>
+                <p>Simple text is marked as a paragraph but is the same size as the header, the text is aligned to center.</p>
+            </div>
+        </div>
+    </div>
+</xmp>
+<p>Let's consider an event with the following parameters:<br />
+	- in "agriculture" category<br />
+    - occurs in <font color="#FF6600">1860</font> (not a range of years)<br />
+    - has a <i>linked</i> event details file <br />
+Code for that event would be:<br />
+</p>
+<code>
+    &lt;div id="e<font color="#FF6600">1860</font>-001" class="eventOuter ep<font color="#FF6600">1860</font>a"&gt;<br />
+        &lt;div class="eventInner pLeft"&gt;<br />
+            &lt;div class="content <i>linked" onclick="javascript:parent.$.fancybox.open({ href: 'events/agriculture/e<font color="#FF6600">1860</font>-001.html',type: 'iframe'});"</i>&gt;<br />
+                &lt;h1&gt;<font color="#FF6600">1860</font>&lt;/h1&gt;<br />
+                &lt;h2&gt;IN ALL CAPS ARE HEADERS&lt;/h2&gt;<br />
+                &lt;p&gt;Simple text is marked as a paragraph but is the same size as the header, the text is aligned to center.&lt;/p&gt;<br />
+            &lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+</code>
+
+<p>Note about year: we are using the first year in range for position</p>
+<p>Not linked event would look like this:
+<xmp>
+    <div id="%%eventID%%" class="eventOuter ep%%YEAR%%a">
+        <div class="eventInner pLeft">
+            <div class="content">
+                <h1>%%YEAR%%-%%LASTYEARINRANGE%%</h1>
+                <h2>IN ALL CAPS ARE HEADERS</h2>
+                <p>Simple text is marked as a paragraph but is the same size as the header, the text is aligned to center.</p>
+            </div>
+        </div>
+    </div>
+</xmp>
+<p>
+Event Types:<br />
+- Simple Unlinked Centered Text or Headers<br />
+- Simple Linked Centered Text or Headers<br />
+- Event Box that includes a Thumbnail and other content<br />
+- Event Box that includes just a Thumbnail<br />
+</p>
+<h2>Add the box to category file</h2>
+<p>Now that we have our box html we are going to add it to the category timeline file. In this instance we open file "agriculture.html" in "categories/" folder</p>
+
+<h1>Adding Event Details HTML Documents</h1>
+1. Create an HTML document (from template or blank)<br />
+2. Save this document as "%%eventID%% which looks like this e1860-001 to a file in "events/" folder under the category it resides in (for example: "agriculture/"). Filename would look like: "e1860-001.html"<br />
+</body>
+</html>

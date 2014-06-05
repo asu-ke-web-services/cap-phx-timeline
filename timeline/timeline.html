@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>PRODUCTION OF AN URBAN RISKSCAPE SOUTH & CENTRAL SOUTH PHOENIX, ARIZONA HISTORIC TIMELINE: 1860-2012</title>
+
+    <!-- reset all elements so we can style each one manually -->
+    <link type="text/css" href="css/reset.css" rel="stylesheet" media="all" />
+    <!-- Load a base jQueryUI stylesheet to make slider look nicer, NOT REQUIRED -->
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/vader/jquery-ui.css" />
+
+    <!-- our main stylesheet -->
+    <link type="text/css" href="css/main.css" rel="stylesheet" media="all" />
+
+    <!-- jquery lib load -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script src="scripts/jquery.ui.touch-punch.min.js"></script>
+	<!-- our scroller script -->
+	<script language="javascript" src="scripts/scroller.js"></script>    
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.3"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.6" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>
+	<script src="scripts/jquery.ez-bg-resize.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(document).ready(function() {
+			
+			$("body").ezBgResize({
+				img     : "images/bgBear2.jpg", // Relative path example.  You could also use an absolute url (http://...).
+				opacity : 1, // Opacity. 1 = 100%.  This is optional.
+				center  : true // Boolean (true or false). This is optional. Default is true.
+			});
+						
+		});
+	</script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+    	<div id="headerWrap">
+			<div id="headerMenu">
+            	<ul>
+                  <li><a href="index.html">start</a></li>
+            	  <li><a href="javascript:parent.$.fancybox.open({ href: 'museumexhibit.html', type: 'iframe', autoSize: 'false', width: '800', height: '70%' });">museum exhibit</a></li>
+            	  <li><a href="javascript:parent.$.fancybox.open({ href: 'insights.html', type: 'iframe', autoSize: 'false', width: '800', height: '70%' });">insights</a></li>
+            	  <li><a href="javascript:parent.$.fancybox.open({ href: 'about.html', type: 'iframe', autoSize: 'false', width: '800', height: '70%' });">about</a></li>
+                  <li><a href="javascript:parent.$.fancybox.open({ href: 'help.html', type: 'iframe', autoSize: 'false', width: '800', height: '70%' });">help</a></li>
+				</ul>
+            </div>
+        	<div id="headerText">
+            	<br />
+            	<h1>Production of an Urban Riskscape South &amp; Central South Phoenix, Arizona Historic Timeline: 1860-2012</h1>
+            </div>
+            <div class="headerHR"></div>
+            <div id="headerButtons">
+                <ul class="cbutton">
+                    <li id="cl1t" class="color096">agriculture</li>
+                    <li id="cl3t" class="colorC00">climate</li>
+                    <li id="cl2t" class="color063">economy</li>
+                    <li id="cl4t" class="colorCCC">industry</li>
+                    <li id="cl9t" class="color3F0">land cover</li>
+                    <li id="cl5t" class="color6CC">memories</li>
+                    <li id="cl8t" class="color690">new construction</li>
+                    <li id="cl6t" class="color639">politics</li>
+                    <li id="cl11t" class="color960">population</li>
+                    <li id="cl10t" class="color39F">water &amp; canals</li>
+                </ul>
+				<script>
+                    $('#cl1t').click(function() { $("#agriculture").toggle(); $("#agricultureLabel").toggle(); $('#cl1t').toggleClass("off"); });
+                    $('#cl11t').click(function() { $("#population").toggle(); $("#populationLabel").toggle(); $('#cl11t').toggleClass("off"); });					
+                    $('#cl2t').click(function() { $("#economy").toggle(); $("#economyLabel").toggle(); $('#cl2t').toggleClass("off");  });
+                    $('#cl3t').click(function() { $("#climate").toggle(); $("#climateLabel").toggle(); $('#cl3t').toggleClass("off");  });
+                    $('#cl4t').click(function() { $("#industry").toggle(); $("#industryLabel").toggle(); $('#cl4t').toggleClass("off");  });
+                    $('#cl5t').click(function() { $("#memories").toggle(); $("#memoriesLabel").toggle(); $('#cl5t').toggleClass("off");  });
+                    $('#cl6t').click(function() { $("#politics").toggle(); $("#politicsLabel").toggle(); $('#cl6t').toggleClass("off");  });
+                    $('#cl8t').click(function() { $("#newconstruction").toggle(); $("#newconstructionLabel").toggle(); $('#cl8t').toggleClass("off");  });
+                    $('#cl9t').click(function() { $("#landcover").toggle(); $("#landcoverLabel").toggle(); $('#cl9t').toggleClass("off");  });
+                    $('#cl10t').click(function() { $("#waterandcanals").toggle(); $("#waterandcanalsLabel").toggle(); $('#cl10t').toggleClass("off");  });		
+                </script>                
+            </div>
+            <div class="headerHR"></div>
+            <div id="headerScroller">
+                <div class="scrollwrap">
+                    <div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
+                        <div class="scroll-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerHR"></div>
+        </div>
+    </div>
+    <div class="scrollpane">
+        <div id="categories" class="scrollcontent">
+        	<div id="agricultureLabel" class="label color096">
+                <span class="catLabel" id="cl1">agriculture</span>
+            </div>
+            <div id="agriculture" class="category color096">
+                <iframe src="categories/agriculture.html" class="iframeclass"></iframe>
+            </div>
+
+        	<div id="climateLabel" class="label colorC00">
+                <span class="catLabel" id="cl1">climate</span>
+            </div>
+            <div id="climate" class="category colorC00">
+                <iframe src="categories/climate.html" class="iframeclass"></iframe>
+            </div>
+
+        	<div id="economyLabel" class="label color063">
+                <span class="catLabel" id="cl1">economy</span>
+            </div>
+            <div id="economy" class="category color063">
+                <iframe src="categories/economy.html" class="iframeclass"></iframe>
+            </div>
+
+        	<div id="industryLabel" class="label colorCCC">
+                <span class="catLabel" id="cl1">industry</span>
+            </div>
+            <div id="industry" class="category colorCCC">
+                <iframe src="categories/industry.html" class="iframeclass"></iframe>
+            </div>
+
+         	<div id="landcoverLabel" class="label color3F0">
+                <span class="catLabel" id="cl1">land cover</span>
+            </div>
+            <div id="landcover" class="category color3F0">
+                <iframe src="categories/landcover.html" class="iframeclass"></iframe>
+            </div>
+
+	       	<div id="memoriesLabel" class="label color6CC">
+                <span class="catLabel" id="cl1">memories</span>
+            </div>
+            <div id="memories" class="category color6CC">
+                <iframe src="categories/memories.html" class="iframeclass"></iframe>
+            </div>
+
+        	<div id="newconstructionLabel" class="label color690">
+                <span class="catLabel" id="cl1">new construction</span>
+            </div>
+            <div id="newconstruction" class="category color690">
+                <iframe src="categories/newconstruction.html" class="iframeclass"></iframe>
+            </div>
+
+        	<div id="politicsLabel" class="label color639">
+                <span class="catLabel" id="cl1">politics</span>
+            </div>
+            <div id="politics" class="category color639">
+                <iframe src="categories/politics.html" class="iframeclass"></iframe>
+            </div>
+            
+        	<div id="populationLabel" class="label color960">
+                <span class="catLabel" id="cl11">population</span>
+            </div>
+            <div id="population" class="category color960">
+                <iframe src="categories/population.html" class="iframeclass"></iframe>
+            </div>
+
+        	<div id="waterandcanalsLabel" class="label color39F">
+                <span class="catLabel" id="cl1">water &amp; canals</span>
+            </div>
+            <div id="waterandcanals" class="category color39F">
+                <iframe src="categories/waterandcanals.html" class="iframeclass"></iframe>
+            </div>
+		</div>        
+    </div>
+</div>
+</body>
+</html>
