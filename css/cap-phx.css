@@ -1,0 +1,11 @@
+#timeline-embed{
+  width: 100%;
+  height: 800px;
+}
+
+.tl-timegroup .tl-timegroup-message  {
+  color: rgba(125,125,0,0.8);
+}
+.tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
+  color:rgba(125,125,0,1);
+}
