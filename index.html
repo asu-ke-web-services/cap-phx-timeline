@@ -7,15 +7,14 @@
   <!-- 1 -->
   <link title="timeline-styles" rel="stylesheet" href="//cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
   <link rel="stylesheet" href="css/cap-phx.css">
+  <div id='timeline-embed'></div>
+</head>
+
+<body>
   <!-- 2 -->
   <script src="//cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <!-- jquery lib load -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-  <!-- Add fancyBox -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
-  <div id='timeline-embed'></div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <!-- 3 -->
   <script type="text/javascript">
   // The TL.Timeline constructor takes at least two arguments:
@@ -28,9 +27,7 @@
   timeline = new TL.Timeline('timeline-embed',
     'https://docs.google.com/spreadsheets/d/1MLJnL4ktlkME894fI30SPqE6X_hPF1jRMHsRpV5wYZ8');
   </script>
-</head>
-
-<body>
+  <script type="text/javascript" src="js/cap-phx-timeline.js"></script>
 </body>
 
 </html>

@@ -3,9 +3,27 @@
   height: 800px;
 }
 
+
 .tl-timegroup .tl-timegroup-message  {
-  color: rgba(125,125,0,0.8);
+  color: #2FCEF6;
+  z-index:100;
+  text-shadow:none;
+  background-color: #efefef;
+  font-size: 16px;
 }
+
 .tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
-  color:rgba(125,125,0,1);
+  color:#1c1c2e;
 }
+
+.tl-slider-container-mask{
+  background-color: #efefef;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #1c1c2e;
+}
+
+.tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6 {
+  color: #2FCEF6;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
