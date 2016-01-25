@@ -3,27 +3,69 @@
   height: 800px;
 }
 
-
+.tl-timegroup{
+  margin-top: 5px;
+}
 .tl-timegroup .tl-timegroup-message  {
-  color: #2FCEF6;
+  color: rgb(153, 0, 51);
   z-index:100;
-  text-shadow:none;
-  background-color: #efefef;
+  background-color: rgb(240, 240, 240);
   font-size: 16px;
+  text-shadow:none;
+  width: 140px;
+  margin-left: 0;
+  padding:6px;
 }
 
 .tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
-  color:#1c1c2e;
+  color: rgb(240,240,240);
 }
 
 .tl-slider-container-mask{
-  background-color: #efefef;
+  background-color: rgb(50, 50, 50);
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #1c1c2e;
+  color: rgb(240,240,240);
 }
 
-.tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6 {
-  color: #2FCEF6;
+.tl-timeline, .tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6 {
+  color: rgb(255, 197, 10);
   font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.tl-text,.tl-text p{
+  color: rgb(240,240,240);
+  font-weight: bold;
+}
+
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+  color: rgb(153, 0, 51);
+}
+
+.tl-timemarker .tl-timemarker-content-container {
+  background-color:rgb(220,220,220);
+}
+
+.tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+
+  color: rgb(240,240,240);
+}
+
+.tl-timemarker:hover .tl-timemarker-content-container{
+  background-color: rgb(153, 0, 51);
+}
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{
+  background-color: rgb(255, 197, 10);
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+  color:rgb(153, 0, 51);
+}
+
+.tl-menubar{
+  right:0;
+  left: auto;
+}
+
+.tl-menubar-button{
+  color: #303030;
+}
