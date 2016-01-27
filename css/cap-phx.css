@@ -16,7 +16,7 @@
   margin-left: 0;
   padding:6px;
   border-color: #990033;
-  border-right-width: 5px;
+  border-right-width: 2px;
   border-right-style: solid;
 }
 
@@ -71,4 +71,25 @@
 
 .tl-menubar-button{
   color: #303030;
+}
+
+.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
+  text-shadow: none;
+  color: rgb(255, 197, 10);
+}
+
+.tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description{
+  opacity: 1;
+}
+
+.tl-slidenav-previous .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description {
+  opacity: 1;
+}
+.tl-slidenav-previous:hover .tl-slidenav-description, .tl-slidenav-next:hover .tl-slidenav-description {
+  opacity: 1;
+}
+
+.tl-timeline p a,.tl-timeline p a:hover,.tl-timeline a ,.tl-timeline a:hover {
+    color: rgb(255, 197, 10);
+    text-decoration: underline;
 }
