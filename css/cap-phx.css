@@ -1,95 +1,125 @@
-#timeline-embed{
-  width: 100%;
-  height: 800px;
+#timeline-embed {
+    width: 100%;
+    height: 800px;
 }
 
-.tl-timegroup{
-  margin-top: 5px;
-}
-.tl-timegroup .tl-timegroup-message  {
-  color: rgb(153, 0, 51);
-  z-index:100;
-  background-color: rgb(240, 240, 240);
-  font-size: 16px;
-  text-shadow:none;
-  width: 140px;
-  margin-left: 0;
-  padding:6px;
-  border-color: #990033;
-  border-right-width: 2px;
-  border-right-style: solid;
+.tl-timegroup {
+    margin-top: 5px;
 }
 
-.tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
-  color: rgb(240,240,240);
+.tl-timegroup .tl-timegroup-message {
+    color: rgb(153, 0, 51);
+    z-index: 100;
+    background-color: rgb(240, 240, 240);
+    font-size: 16px;
+    text-shadow: none;
+    width: 140px;
+    margin-left: 0;
+    padding: 6px;
+    border-color: #990033;
+    border-right-width: 2px;
+    border-right-style: solid;
 }
 
-.tl-slider-container-mask{
-  background-color: rgb(50, 50, 50);
-  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: rgb(240,240,240);
+.tl-text .tl-headline-date,
+.tl-text h3.tl-headline-date {
+    color: rgb(240, 240, 240);
 }
 
-.tl-timeline, .tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6 {
-  color: rgb(255, 197, 10);
-  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.tl-slider-container-mask {
+    background-color: rgb(50, 50, 50);
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(240, 240, 240);
 }
 
-.tl-text,.tl-text p{
-  color: rgb(240,240,240);
-  font-weight: bold;
+.tl-timeline,
+.tl-timeline h1,
+.tl-timeline h2,
+.tl-timeline h3,
+.tl-timeline h4,
+.tl-timeline h5,
+.tl-timeline h6 {
+    color: rgb(255, 197, 10);
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.tl-text,
+.tl-text p {
+    color: rgb(240, 240, 240);
+    font-weight: bold;
 }
 
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
-  color: rgb(153, 0, 51);
+    color: rgb(153, 0, 51);
 }
 
 .tl-timemarker .tl-timemarker-content-container {
-  background-color:rgb(220,220,220);
+    background-color: rgb(220, 220, 220);
 }
 
 .tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
-
-  color: rgb(240,240,240);
+    color: rgb(240, 240, 240);
 }
 
-.tl-timemarker:hover .tl-timemarker-content-container{
-  background-color: rgb(153, 0, 51);
+.tl-timemarker:hover .tl-timemarker-content-container {
+    background-color: rgb(153, 0, 51);
 }
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{
-  background-color: rgb(255, 197, 10);
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+    background-color: rgb(255, 197, 10);
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
-  color:rgb(153, 0, 51);
+    color: rgb(153, 0, 51);
 }
 
-.tl-menubar{
-  right:0;
-  left: auto;
+.tl-menubar {
+    right: 0;
+    left: auto;
 }
 
-.tl-menubar-button{
-  color: #303030;
+.tl-menubar-button {
+    color: #303030;
 }
 
-.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
-  text-shadow: none;
-  color: rgb(255, 197, 10);
+.tl-timeline .tl-caption a,
+.tl-timeline .tl-credit a,
+.tl-timeline .tl-slidenav-next a,
+.tl-timeline .tl-slidenav-previous a {
+    color: rgb(255, 197, 10);
 }
 
-.tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description{
-  opacity: 1;
+.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon,
+.tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon,
+.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title,
+.tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title,
+.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,
+.tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
+    text-shadow: none;
+    color: rgb(255, 197, 10);
 }
 
-.tl-slidenav-previous .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-description {
-  opacity: 1;
-}
-.tl-slidenav-previous:hover .tl-slidenav-description, .tl-slidenav-next:hover .tl-slidenav-description {
-  opacity: 1;
+.tl-slidenav-previous .tl-slidenav-description,
+.tl-slidenav-next .tl-slidenav-description {
+    opacity: 1;
 }
 
-.tl-timeline p a,.tl-timeline p a:hover,.tl-timeline a ,.tl-timeline a:hover {
+.tl-slidenav-previous .tl-slidenav-title,
+.tl-slidenav-next .tl-slidenav-title,
+.tl-slidenav-previous .tl-slidenav-description,
+.tl-slidenav-next .tl-slidenav-description {
+    opacity: 1;
+}
+
+.tl-slidenav-previous:hover .tl-slidenav-description,
+.tl-slidenav-next:hover .tl-slidenav-description {
+    opacity: 1;
+}
+
+.tl-timeline p a,
+.tl-timeline p a:hover,
+.tl-timeline a,
+.tl-timeline a:hover {
     color: rgb(255, 197, 10);
     text-decoration: underline;
 }
