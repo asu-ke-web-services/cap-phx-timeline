@@ -16,8 +16,8 @@
     width: 140px;
     margin-left: 0;
     padding: 6px;
-    border-color: #990033;
-    border-right-width: 2px;
+    border-color: rgb(200, 200, 200);
+    border-right-width: 1px;
     border-right-style: solid;
 }
 
@@ -76,6 +76,9 @@
 .tl-menubar {
     right: 0;
     left: auto;
+    border-color: rgb(200, 200, 200);
+    border-left-width: 1px;
+    border-left-style: solid;
 }
 
 .tl-menubar-button {
@@ -128,3 +131,4 @@
     color: rgb(255, 197, 10);
     text-decoration: underline;
 }
+
