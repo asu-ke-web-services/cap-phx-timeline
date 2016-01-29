@@ -89,6 +89,11 @@
     color: rgb(255, 197, 10);
 }
 
+.tl-caption,
+.tl-credit {
+    color: rgb(255, 197, 10);
+}
+
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon,
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title,
