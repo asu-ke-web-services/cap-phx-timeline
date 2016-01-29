@@ -24,8 +24,13 @@
   // and the element must have CSS styling to give it width and height
   // optionally, a third argument with configuration options can be passed.
   // See below for more about options.
+  var options = {
+    initial_zoom: 3,
+    start_at_slide: 75
+  }
+
   timeline = new TL.Timeline('timeline-embed',
-    'https://docs.google.com/spreadsheets/d/1MLJnL4ktlkME894fI30SPqE6X_hPF1jRMHsRpV5wYZ8');
+    'https://docs.google.com/spreadsheets/d/1MLJnL4ktlkME894fI30SPqE6X_hPF1jRMHsRpV5wYZ8',options);
   </script>
   <script type="text/javascript" src="js/cap-phx-timeline.js"></script>
 </body>
