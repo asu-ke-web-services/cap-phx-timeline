@@ -82,6 +82,13 @@
     color: #303030;
 }
 
+.tl-timeline .tl-caption a,
+.tl-timeline .tl-credit a,
+.tl-timeline .tl-slidenav-next a,
+.tl-timeline .tl-slidenav-previous a {
+    color: rgb(255, 197, 10);
+}
+
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon,
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title,
